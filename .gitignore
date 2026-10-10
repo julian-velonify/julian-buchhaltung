@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+tsconfig.tsbuildinfo
+.env
+.env.*
+!.env.example
+# Geschäftsdaten gehören NIE ins (öffentliche) Repo – sie liegen im Google Sheet
+data/
+*.csv

@@ -1,0 +1,40 @@
+@page { size: A4; margin: 0 }
+* { box-sizing: border-box }
+html, body { margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1a1a1a; font-size: 9.5pt; line-height: 1.4 }
+.page { position: relative; width: 210mm; height: 297mm; background: #fff; overflow: hidden }
+
+/* Briefpapier (aus briefpapier.html übernommen) */
+.bar { position: absolute; left: 0; top: 0; width: 210mm; height: 18.5mm; background: #45142D }
+.stripe { position: absolute; left: 0; top: 18.5mm; width: 210mm; height: 1.8mm; background: #C5D8E6 }
+.logo { position: absolute; left: 14mm; top: 4mm; width: 45.1mm; height: 10.5mm; overflow: hidden }
+.logo img { position: absolute; width: 58.8mm; height: 58.8mm; left: -6.86mm; top: -24mm }
+.vline { position: absolute; left: 10.5mm; top: 75mm; width: 0.9mm; height: 187mm; background: #45142D }
+
+.sender-line { position: absolute; left: 25mm; top: 45mm; font-size: 7pt; color: #666; border-bottom: 0.2mm solid #999; padding-bottom: 0.6mm }
+.address { position: absolute; left: 25mm; top: 52mm; width: 85mm; font-size: 10pt; line-height: 1.35 }
+
+.meta { position: absolute; left: 125mm; top: 45mm; width: 70mm; margin: 0; font-size: 8pt }
+.meta dt { color: #45142D; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: 6.5pt; margin-top: 1.6mm }
+.meta dd { margin: 0 }
+
+.body { position: absolute; left: 25mm; top: 82mm; width: 165mm }
+h1 { font-size: 13pt; margin: 0 0 5mm; color: #45142D }
+h1 span { font-weight: 400; font-size: 10pt; color: #555; margin-left: 4mm }
+p { margin: 0 0 3.5mm }
+
+table { border-collapse: collapse; width: 100% }
+.items { margin: 5mm 0 3mm }
+.items th { text-align: left; font-size: 7.5pt; color: #45142D; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 0.4mm solid #45142D; padding: 1.5mm 0 }
+.items td { padding: 2.2mm 0; border-bottom: 0.15mm solid #ddd; vertical-align: top }
+.items .desc { width: 90mm }
+.items .sub { font-size: 8.5pt; color: #555; margin-top: 0.8mm }
+.r { text-align: right; white-space: nowrap }
+
+.sum { width: 85mm; margin: 0 0 6mm auto }
+.sum td { padding: 1mm 0 }
+.sum .note { font-size: 8pt; color: #555 }
+.sum .total td { border-top: 0.4mm solid #45142D; font-weight: 700; padding-top: 1.6mm }
+.terms { margin-top: 2mm }
+
+.footer { position: absolute; left: 25mm; right: 20mm; bottom: 12mm; display: flex; gap: 8mm; font-size: 7.2pt; color: #444; border-top: 0.2mm solid #C5D8E6; padding-top: 2.5mm }
+.footer > div { flex: 1 }
